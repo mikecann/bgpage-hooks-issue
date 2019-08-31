@@ -2,7 +2,7 @@ import * as React from "react";
 import { render } from "react-dom";
 import { useEffect, useState, useLayoutEffect } from "react";
 
-export function useBackgroundKeepaliveHack() {
+function useBackgroundKeepaliveHack() {
   const [tick, setTick] = useState(0);
   useLayoutEffect(() => {
     setTick(1);
